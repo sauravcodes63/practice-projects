@@ -1,0 +1,5 @@
+pseudo class :
+hover, active
+
+css properties :
+opacity, box-shadow, transition(value is a css prop.)
