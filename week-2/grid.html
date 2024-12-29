@@ -1,0 +1,38 @@
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: 100px 100px ;
+        
+    }
+    .container_fr{
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 100px 200px 1fr 2fr;
+    }
+
+</style>
+
+
+<div class="container">
+    <div style="background-color: rgb(8, 150, 221);">
+        div 1
+    </div>
+    <div style="background-color: rgb(225, 14, 179);">
+        div 2    
+    </div>
+</div>
+<div class="container_fr">
+
+    <div style="background-color: rgb(8, 150, 221);">
+        div 1
+    </div>
+    <div style="background-color: rgb(225, 14, 179);">
+        div 2    
+    </div>
+    <div style="background-color: rgb(8, 150, 221);">
+        1fr    
+    </div>
+    <div style="background-color: rgb(225, 14, 179);">
+        2fr    
+    </div>
+</div>

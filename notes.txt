@@ -1,0 +1,21 @@
+pseudo class :
+hover, active
+
+css properties :
+opacity, box-shadow, transition(value is a css prop.)
+
+Box-model:
+padding(inside the element)
+margin (outside the element)
+
+<p> by default, comes with margin at top and bottom
+
+types of elements:
+block elements
+in-line block elements
+in-line elements
+
+
+grid
+grid-templatte-coulumns
+fr(free space)
