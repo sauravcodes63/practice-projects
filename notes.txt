@@ -19,3 +19,9 @@ in-line elements
 grid
 grid-templatte-coulumns
 fr(free space)
+
+Flexbox
+flex-direction
+flex : 1 (eq. to 1fr)
+
+Grid is rigit. Flexbox is flexible.

@@ -1,0 +1,41 @@
+.thumbnail{
+    width : 300px;
+}
+.channel-picture{
+    display: inline-block;
+}
+.profile-picture{
+    border-radius: 40px;
+}
+
+.video-title{
+    font-weight: 700;
+}
+
+.video-author{
+    font-weight: 396;
+}
+
+.video-stats{
+    font-weight: 400;
+}
+
+.video-preview{
+    display : inline-block;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.video-info{
+    display: inline-block;
+    width: 200px;
+}
+
+.channel-info{
+    display: inline-block;
+    height : 200px;
+}

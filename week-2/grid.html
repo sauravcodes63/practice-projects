@@ -7,32 +7,37 @@
     .container_fr{
         margin-top: 12px;
         display: grid;
-        grid-template-columns: 100px 200px 1fr 2fr;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px;
     }
 
 </style>
 
 
 <div class="container">
-    <div style="background-color: rgb(8, 150, 221);">
+    <div style="background-color: rgb(94, 177, 216);">
         div 1
     </div>
-    <div style="background-color: rgb(225, 14, 179);">
+    <div style="background-color: rgba(212, 182, 28, 0.454);">
         div 2    
     </div>
 </div>
 <div class="container_fr">
 
-    <div style="background-color: rgb(8, 150, 221);">
+    <div style="background-color: rgb(142, 217, 255);">
         div 1
     </div>
-    <div style="background-color: rgb(225, 14, 179);">
-        div 2    
+    <div style="background-color: rgb(255, 0, 200);">
+        div 2   
+        <p></p>
+        text 2  
     </div>
-    <div style="background-color: rgb(8, 150, 221);">
+    <div style="background-color: rgb(142, 217, 255);">
         1fr    
     </div>
-    <div style="background-color: rgb(225, 14, 179);">
+    <div style="background-color: rgb(255, 0, 200);">
         2fr    
     </div>
 </div>
+
