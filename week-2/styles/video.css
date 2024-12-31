@@ -1,11 +1,18 @@
 .thumbnail{
     width : 300px;
 }
+
+.thumbnail-row{
+    position : relative;
+    width : 300px;
+
+}
 .channel-picture{
     display: inline-block;
 }
 .profile-picture{
-    border-radius: 40px;
+    width : 40px;
+    border-radius: 20px;
 }
 
 .video-title{
@@ -38,4 +45,16 @@
 .channel-info{
     display: inline-block;
     height : 200px;
+}
+
+.video-time{
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+    right: 8px;
+    bottom : 10px;
+    font-family: Roboto, Arial;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 2px;
 }
