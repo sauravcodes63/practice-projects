@@ -1,213 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <div class="left-section">
-            <img class="hamburger-icon" src="icons/hamburger-menu.svg" alt="">
-            <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
-        </div>
-        <div class="middle-section">
-                <input class="search-bar" type="text" placeholder="Search" />
-                <button class="search-button">
-                    <img class="search-icon" src="icons/search.svg" alt="">
-                    <div class="tooltip">Search</div>
-                </button>
-                <button class="voice-search-button">
-                    <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
-                    <div class="tooltip">Voice Search</div>
-                </button>
-
-        </div>
-        <div class="right-section">
-            <img class="upload-icon" src="icons/upload.svg" alt="">
-            <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
-            <div class="notification-icon-container">
-                <img class="notifications-icon" src="icons/notifications.svg" alt="">
-                <div class="notification-count">3</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube</title>
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-icon" src="icons/hamburger-menu.svg" alt="">
+                <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
             </div>
-            <img class="self-channel-icon" src="icons/my-channel-picture.jpg" alt="">
-        </div>
-    </div>
+            <div class="middle-section">
+                    <input class="search-bar" type="text" placeholder="Search" />
+                    <button class="search-button">
+                        <img class="search-icon" src="icons/search.svg" alt="">
+                        <!-- Put position absolute inside postion relative -->
+                        <div class="tooltip">Search</div>
+                    </button>
 
-    <div class="sidebar">
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/home.svg" alt="">
-            <div>Home</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/explore.svg" alt="">
-            <div>Explore</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/originals.svg" alt="">
-            <div>Originals</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/subscriptions.svg" alt="">
-            <div>Subscriptions</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/youtube-music.svg" alt="">
-            <div>YouTube Music</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="https://supersimple.dev/exercises/youtube/icons/library.svg" alt="">
-            <div>Library</div>
-        </div>
+                    <button class="voice-search-button">
+                        <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                        <div class="tooltip">Voice Search</div>
+                    </button>
 
-    </div>
-
-    <div class="video-grid">
-
-    <div class="video-preview">
-            <div class="thumbnail-row">
-                <div>
-                    <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg" alt="">
+                    <div class="tooltip">Create</div>
                 </div>
-                <div class="video-time">14:20</div>
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+                <div class="notification-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg" alt="">
+                    <div class="notification-count">3</div>
+                </div>
+                <img class="self-channel-icon" src="icons/my-channel-picture.jpg" alt="">
             </div>
-            <div class="channel-info">
-                <div >
-                    <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="thumbnail-1">
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/home.svg" alt="">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/explore.svg" alt="">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/originals.svg" alt="">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/subscriptions.svg" alt="">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/youtube-music.svg" alt="">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="https://supersimple.dev/exercises/youtube/icons/library.svg" alt="">
+                <div>Library</div>
+            </div>
+
+        </nav>
+
+        <main>
+            
+            <section class="video-grid">
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <div>
+                            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp" alt="thumbnail-1">
+                        </div>
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="channel-info">
+                        <div >
+                            <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="thumbnail-1">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Talk With Sundar
+                            </p>
+                            <p class="video-author">
+                                MKBHD
+                            </p>
+                            <p class="video-stats">
+                                2M Views  &#183; 2 Months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-2.webp" alt="thumbnail-2">
+                        <div class="video-time">08:20</div>
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-2.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Try NOT to Laugh Challenge
+                            </p>
+                            <p class="video-author">
+                                MarkPlier
+                            </p>
+                            <p class="video-stats">
+                                19M Views  &#183; 4 Years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-3.webp" alt="thumbnail-3">
+                        <div class="video-time">10:34</div>
+                        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-3.jpeg" alt="">
+                        </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Prank
+                        </p>
+                        <p class="video-author">
+                            SSniperWolf
+                        </p>
+                        <p class="video-stats">
+                            13M Views  &#183; 3 Years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-4.webp" alt="thumbnail-4">
+                    <div class="video-time">06:12</div>
                 </div>
                 <div class="video-info">
-                    <p class="video-title">
-                        Talk With Sundar
-                    </p>
-                    <p class="video-author">
-                        MKBHD
-                    </p>
-                    <p class="video-stats">
-                        2M Views  &#183; 2 Months ago
-                    </p>
+                    <div>
+                        <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-4.jpeg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Solve this Math equation
+                        </p>
+                        <p class="video-author">
+                            Verilium
+                        </p>
+                        <p class="video-stats">
+                            12 Views  &#183; 6 Months ago
+                        </p>
+                    </div>
                 </div>
             </div>
-    </div>
-
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-2.webp" alt="thumbnail-2">
-            <div class="video-time">08:20</div>
-        </div>
-        <div class="video-info">
-            <div>
-                <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-2.jpeg" alt="">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-5.webp" alt="thumbnail-5">
+                    <div class="video-time">11:56</div>
+                </div>
+                <div class="video-info">
+                    <div>
+                        <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-5.jpeg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Kadane's Algo
+                        </p>
+                        <p class="video-author">
+                            CS Dojo
+                        </p>
+                        <p class="video-stats">
+                            230k Views  &#183; 2 Years ago
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Try NOT to Laugh Challenge
-                </p>
-                <p class="video-author">
-                    MarkPlier
-                </p>
-                <p class="video-stats">
-                    19M Views  &#183; 4 Years ago
-                </p>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-6.webp" alt="thumbnail-6">
+                    <div class="video-time">04:32</div>
+                </div>
+                <div class="video-info">
+                    <div>
+                        <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-6.jpeg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Challenge 1
+                        </p>
+                        <p class="video-author">
+                            MrBeast
+                        </p>
+                        <p class="video-stats">
+                            10M Views  &#183; 1 Year ago
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-3.webp" alt="thumbnail-3">
-            <div class="video-time">10:34</div>
-            
-        </div>
-        <div class="video-info">
-            <div>
-                <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-3.jpeg" alt="">
-            </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Prank
-                </p>
-                <p class="video-author">
-                    SSniperWolf
-                </p>
-                <p class="video-stats">
-                    13M Views  &#183; 3 Years ago
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-4.webp" alt="thumbnail-4">
-            <div class="video-time">06:12</div>
-        </div>
-        <div class="video-info">
-            <div>
-                <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-4.jpeg" alt="">
-            </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Solve this Math equation
-                </p>
-                <p class="video-author">
-                    Verilium
-                </p>
-                <p class="video-stats">
-                    12 Views  &#183; 6 Months ago
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-5.webp" alt="thumbnail-5">
-            <div class="video-time">11:56</div>
-        </div>
-        <div class="video-info">
-            <div>
-                <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-5.jpeg" alt="">
-            </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Kadane's Algo
-                </p>
-                <p class="video-author">
-                    CS Dojo
-                </p>
-                <p class="video-stats">
-                    230k Views  &#183; 2 Years ago
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-6.webp" alt="thumbnail-6">
-            <div class="video-time">04:32</div>
-        </div>
-        <div class="video-info">
-            <div>
-                <img class="profile-picture" src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-6.jpeg" alt="">
-            </div>
-            <div class="video-info">
-                <p class="video-title">
-                    Challenge 1
-                </p>
-                <p class="video-author">
-                    MrBeast
-                </p>
-                <p class="video-stats">
-                    10M Views  &#183; 1 Year ago
-                </p>
-            </div>
-        </div>
-    </div>
-
-</div>
-</body>
+            </section>
+        </main>
+        
+    </body>
 </html>

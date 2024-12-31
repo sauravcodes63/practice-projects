@@ -40,3 +40,8 @@ fixed : placed in the browser window
 absolute : placed on the page
 when position absoloute is placed inside 
 fixed element it is set relative to that.
+
+inheritance :
+passed down from parent to child tags
+only affects text properties not border, margin, padding etc
+
